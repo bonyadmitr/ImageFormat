@@ -20,6 +20,7 @@
 		CE57736820386FF400ADE481 /* 3.gif in Resources */ = {isa = PBXBuildFile; fileRef = CE57736220386FF400ADE481 /* 3.gif */; };
 		CE57736920386FF400ADE481 /* 4.svg in Resources */ = {isa = PBXBuildFile; fileRef = CE57736320386FF400ADE481 /* 4.svg */; };
 		CE57736C2038720800ADE481 /* 7.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = CE57736A20386FFA00ADE481 /* 7.HEIC */; };
+		CE5E54CF2038A4770068CC2C /* UIImage+HEIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E54CE2038A4770068CC2C /* UIImage+HEIC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CE57736220386FF400ADE481 /* 3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3.gif; sourceTree = "<group>"; };
 		CE57736320386FF400ADE481 /* 4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 4.svg; sourceTree = "<group>"; };
 		CE57736A20386FFA00ADE481 /* 7.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.HEIC; sourceTree = "<group>"; };
+		CE5E54CE2038A4770068CC2C /* UIImage+HEIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+HEIC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				CE57736B20386FFE00ADE481 /* Test images */,
 				CE57734B20386CB100ADE481 /* ViewController.swift */,
 				CE57735B20386CCB00ADE481 /* ImageFormat.swift */,
+				CE5E54CE2038A4770068CC2C /* UIImage+HEIC.swift */,
 				CE57734D20386CB100ADE481 /* Main.storyboard */,
 			);
 			path = ImageFormat;
@@ -185,6 +188,7 @@
 			files = (
 				CE57735C20386CCB00ADE481 /* ImageFormat.swift in Sources */,
 				CE57734C20386CB100ADE481 /* ViewController.swift in Sources */,
+				CE5E54CF2038A4770068CC2C /* UIImage+HEIC.swift in Sources */,
 				CE57734A20386CB100ADE481 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/ImageFormat/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.by.ImageFormat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,6 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/ImageFormat/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.by.ImageFormat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

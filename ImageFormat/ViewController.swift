@@ -18,6 +18,26 @@ class ViewController: UIViewController {
                 print(file, ImageFormat.get(from: data))
             }
         }
+        
+        
+        if #available(iOS 11.0, *) {
+            /// not working in simulator
+            guard let bundlePath = Bundle.main.path(forResource: "7.HEIC", ofType: ""),
+                let url = URL(string: bundlePath),
+                let ciImage = CIImage(contentsOf: url)
+                else { return }
+            
+            let image = UIImage(ciImage: ciImage)
+            let data = image.heicRepresentation(quality: 1)!
+            print("heicRepresentation", ImageFormat.get(from: data))
+            
+            if let image = UIImage(named: "7.HEIC"),
+                let data = image.heicRepresentation(quality: 1) {
+                print("heicRepresentation", ImageFormat.get(from: data))
+            }
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 
